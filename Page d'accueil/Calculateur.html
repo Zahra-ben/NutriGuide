@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+        <title> Calculateur de Calories </title>
+
+        <header>
+           <h1> NutriGuide </h1><br>
+        </header>
+          
+<img src="calories.jpg" width="150" height="100"; align="right" alt="calories"> <br>
+     <h1> <p style="font-size: 40px;" align="center" > Calculateur de Besoins Caloriques Journaliers </p></h1> <br>
+     <p style="font-size: 20px;" align="center" > Entrez vos informations ci-dessous dans le calculateur pour connaître votre apport calorique <br> quotidien recommandé ! Ce calcul vous aidera à découvrir combien de calories <br> votre corps a besoin pour bien fonctionner avec votre routine  <br> et atteindre vos objectifs ! </p>
+
+<img src="cal.jpg" width="450" height="300"; align="right" alt="calories"> <br> 
+      
+<!-- Formulaire HTML -->
+
+<form id="caloriesForm">
+  
+      <label>Poids (kg): <input type="number" id="weight" required></label> <br><br>
+      <label>Taille (cm): <input type="number" id="height" required></label> <br><br>
+      <label>Âge: <input type="number" id="age" required></label> <br><br>
+      <label>Sexe:
+           <select id="gender">
+                <option value="male">Homme</option>
+                <option value="female">Femme</option>
+           </select>
+      </label><br><br>
+ 
+      <label>Niveau d'activité:
+           <select id="activityLevel">
+                <option value="1.375">Légèrement actif</option>
+                <option value="1.55">Modérément actif</option>
+                <option value="1.725">Très actif</option>
+           </select>
+       </label><br><br>
+
+      <label>Objectif:
+           <select id="goal">
+                <option value="maintain">Maintien</option>
+                <option value="lose">Perte de poids</option>
+                <option value="gain">Gain de poids</option>
+           </select>
+      </label><br><br>
+  
+<button type="button" onclick="calculateCalories()">Calculer</button>
+</form> 
